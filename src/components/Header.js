@@ -10,7 +10,7 @@ const Header = () => {
         <div>
           <Link to="/">
             <h1 className="font-bold uppercase tracking-wide text-2xl mb-3">
-              <span className="logo-start">GO</span>-INVOICE
+              <span className="logo-start">EASY</span>BILL
             </h1>
           </Link>
         </div>

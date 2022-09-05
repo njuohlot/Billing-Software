@@ -26,7 +26,7 @@ function Home() {
   const [date, setDate] = useState('');
   const [due_date, setDueDate] = useState('');
   const [Invoice_number, setInvoiceNummber] = useState("");
-  const [bank, setBank] = useState("paris bank");
+  const [bank, setBank] = useState("");
   const [account_number, setAccountNumber] = useState("");
   const [account_holder, setAccountHolder] = useState("");
   const [tax_rate, setTaxRate] = useState('');
@@ -56,7 +56,7 @@ function Home() {
 
   return (
     <>
-      <main className="m-5 p-5 xl:max-w-4xl  md:max-w-xl md:mx-auto lg:max-w-2xl bg-white rounded shadow">
+      <main className="m-5 p-5 xl:max-w-4xl  md:max-w-xl md:mx-auto lg:max-w-4xl bg-white rounded shadow">
        
         {showInvoice ? (
           <>
@@ -127,7 +127,7 @@ function Home() {
             <div className='logo'>
 
               <Link to='/'>
-              <h1><span className='logo-start'>GO</span>-INVOICE</h1>
+              <h1><span className='logo-start'>EASY</span>BILL</h1>
 
               </Link>
                 
@@ -135,9 +135,9 @@ function Home() {
            
             
         </header>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center bt-2">
               
-              <h2 className="font-400 tracking-wide text-2xl mb-2 mt-3">
+              <h2 className="font-bold tracking-wide text-2xl mb-2 mt-3">
                 Business Information
               </h2>
               <article className="md:grid grid-cols-2 gap-10">
@@ -202,7 +202,7 @@ function Home() {
                 </div>
                 <div className="flex flex-col justify-center"></div>
               </article>
-              <h2 className="font-400 tracking-wide text-2xl mb-2 mt-3 ">
+              <h2 className="font-bold tracking-wide text-2xl mb-2 mt-3 ">
                 Bank Information
               </h2>
               <article className="md:grid grid-cols-2 gap-10">
@@ -245,7 +245,7 @@ function Home() {
                 <div className="flex flex-col justify-center"></div>
               </article>
 
-              <h2 className="font-400 tracking-wide text-2xl mb-2 mt-3">
+              <h2 className="font-bold tracking-wide text-2xl mb-2 mt-3">
                 Invoice Information
               </h2>
               <article className="md:grid grid-cols-2 gap-10">
@@ -322,7 +322,7 @@ function Home() {
                 </div>
               </article>
 
-              <h2 className="font-400 tracking-wide text-2xl mb-2 mt-3">
+              <h2 className="font-bold tracking-wide text-2xl mb-2 mt-3">
                 Client Information
               </h2>
               <article className="md:grid grid-cols-2 gap-10">
@@ -393,7 +393,7 @@ function Home() {
               </article>
               {/**table-here */}
 
-              <h2 className="font-400 tracking-wide text-2xl mb-2 mt-3">
+              <h2 className="font-bold tracking-wide text-2xl mb-1 mt-3">
                 Invoice Items
               </h2>
 
@@ -429,8 +429,8 @@ function Home() {
 
               <button
                 onClick={handleClick}
-                className=" mt-5 bg-blue-500 text-white font-bold transition-all duration-300 py-2 px-8 rounded shadow border-2 border-blue-500 hover:bg-transparent hover:text-blue-500"
-              >
+                className=" mt-5 text-white font-bold transition-all duration-300 py-2 px-8 rounded shadow"
+              style={{backgroundColor: 'goldenrod'}}>
                 Preview Invoice
               </button>
             </div>

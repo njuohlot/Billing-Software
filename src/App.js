@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 
 
 
+
 function App() {
   useEffect(()=>{
     auth.onAuthStateChanged(authUser =>{
@@ -21,9 +22,10 @@ function App() {
   
   return (
     <>
+   
     <Router>
       <Routes>
-        <Route path="/" element={<Hero/>}/>
+        <Route path="/" element={<Hero/>}/> 
         <Route path="/auth" element={<Auth/>}/>
         <Route path="/create_invoice" element={<Home/>}/>
       </Routes>

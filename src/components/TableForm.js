@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { AiOutlineDelete, AiOutlineEdit, AiFillPlusCircle } from "react-icons/ai";
+import { AiOutlineDelete, AiOutlineEdit} from "react-icons/ai";
 
 const TableForm = ({
   no,
@@ -143,7 +143,7 @@ const TableForm = ({
             <p>{price * quantity}</p>
           </div>
         </div>
-        <button className=" mb-5 bg-blue-500 text-white font-bold transition-all duration-300 py-2 px-8 rounded shadow border-2 border-blue-500 hover:bg-transparent hover:text-blue-500">
+        <button className=" mb-5  text-white font-bold transition-all duration-300 py-2 px-8 rounded shadow" style={{backgroundColor: 'goldenrod'}}>
           {edit ? "Edit item" : "Add  Item"}
         </button>
       </form>

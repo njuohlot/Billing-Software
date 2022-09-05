@@ -92,10 +92,10 @@ const Auth = () => {
             <button className="sign-in" onClick={handleLogin} type='submit'>Sign in</button>
           </form>
           <p>
-            By Signing-in you agree to <span className="logo-start">GO</span>
-            -INVOICE Terms and Conditions
+            By Signing-in you agree to <span className="logo-start">EASY</span>
+            BILL Terms and Conditions
           </p>
-          <button className="register" onClick={handleRegister} type='submit'>Create your GO-Invoice Account</button>
+          <button className="register" onClick={handleRegister} type='submit'>Create your EASYBILL Account</button>
         </div>
       </div>
     </div>
