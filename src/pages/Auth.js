@@ -75,7 +75,7 @@ const Auth = () => {
         <div className="logo">
           <Link to="/">
             <h1>
-              <span className="logo-start">GO</span>-INVOICE
+              <span className="logo-start">EASY</span>BILL
             </h1>
           </Link>
         </div>

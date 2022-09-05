@@ -42,15 +42,11 @@ function Home() {
   const [list, setList] = useState([]);
   const [total, setTotal] = useState(0);
   const componentsRef = useRef();
-  const navigate = useNavigate()
+
 
   const handleClick = (e) =>{
     e.preventDefault();
-    if(localStorage.getItem('user')) {
       setShowInvoice(true)
-    }else{
-     navigate('/auth')
-    }
 
   }
 
